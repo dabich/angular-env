@@ -45,4 +45,4 @@ ENV CHROME_BIN /usr/bin/google-chrome
 
 RUN yarn global add @angular/cli@$NG_CLI_VERSION phantomjs-prebuilt && rm -rf $(yarn cache dir)
 
-ENTRYPOINT ["/entrypoint.sh"]
+# ENTRYPOINT ["/entrypoint.sh"]
