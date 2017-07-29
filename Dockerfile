@@ -44,5 +44,6 @@ ENV DISPLAY :99.0
 ENV CHROME_BIN /usr/bin/google-chrome
 
 RUN yarn global add @angular/cli@$NG_CLI_VERSION phantomjs-prebuilt && rm -rf $(yarn cache dir)
+RUN ng set --global warnings.versionMismatch=false
 
 # ENTRYPOINT ["/entrypoint.sh"]
